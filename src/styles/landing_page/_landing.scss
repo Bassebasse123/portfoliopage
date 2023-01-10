@@ -1,0 +1,44 @@
+@import "../variables";
+@import "../base";
+
+body { 
+    background: url(../../images/landing_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 99vw;
+    height: 100vh;
+}
+
+header {
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: fit-content;
+    position: fixed;
+    padding: 2rem;
+    background-color: $primary-color
+}
+
+nav { 
+    ul {
+        margin: 0 auto;
+        width: 100%;
+    @include flexcenter;
+    justify-content: space-around;
+    list-style-type: none;
+        li {
+            text-align: center;
+            width: 130px;
+            padding: 0rem 1rem;
+            background-color: $accent-color;
+        margin: 0 1rem;
+        font-size: 3rem;
+    }
+}
+}
+
+main {
+    padding-top: 100px;
+}
+

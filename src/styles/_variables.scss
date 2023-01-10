@@ -18,7 +18,16 @@
 
 :root {
     font-size: 62.5%;
-    --primary-color: #16213e;
-    --secondary-color: #c5fceb;
-    --accent-color: #ffc800;
+  }
+
+  $primary-color: #16213e;
+  $secondary-color: #c5fceb;
+  $accent-color: #fec24a;
+  $accent-color-two: #e52a2d;
+  
+
+  @mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

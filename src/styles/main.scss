@@ -2,7 +2,7 @@
 // You need the base only when you are not using bootstrap. In that case, go to _base.scss
 // to customize it as you may want.
 
-@import "variables";
-@import "base";
+@import "./variables";
+@import "./base";
 @import "./sign_in_page/signin.scss";
 @import "./landing_page/landing";
