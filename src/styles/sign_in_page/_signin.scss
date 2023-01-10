@@ -1,0 +1,137 @@
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+  }
+  
+  /* SIGN IN */
+  
+  .signin {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1603811594813-63f576d92fd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1379&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+  }
+  
+  .signin-card {
+    height: 75vh;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+    color: var(--secondary-color);
+  }
+  
+  .signinpic {
+    border: var(--secondary-color) 3px solid;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 5rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  .signinpic:hover {
+    transform: scale(1.8);
+  }
+  
+  h1 {
+  min-width: 400px;
+  max-width: 600px;
+      text-align: center;
+    margin-bottom: 5rem;
+    font-size: 2.8rem;
+  }
+
+  .form-element {
+    width: 60%;
+    margin: 1rem 0;
+    min-height: 55px;
+    min-width: 30rem;
+    position: relative;
+    height: 7rem;
+    overflow: hidden;
+  }
+  
+  .form-element input {
+    font-family: monospace;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    color: var(--secondary-color);
+    padding-top: 25px;
+    border: none;
+    color: var(--secondary-color);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .form-element label {
+    font-size: 16px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid var(--secondary-color);
+  }
+  
+  .form-element label::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid var(--accent-color);
+    transform: translateX(+100%);
+    transition: all 0.2s 0.1s ease;
+  }
+  
+  .content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 8px;
+    transition: all 0.3s ease;
+  }
+  .form-element input:focus {
+    outline: none;
+  }
+  .form-element input:focus + .label-name .content-name,
+  .form-element input:valid + .label-name .content-name {
+    transform: translateY(-100%);
+    font-size: 12px;
+    left: 0px;
+    color: var(--accent-color);
+    text-shadow: 0px 0px 5px var(--accent-color);
+  }
+  .form-element input:focus + .label-name::after,
+  .form-element input:valid + .label-name::after {
+    transform: translateX(0%);
+  }
+  
+  button[type=submit] {
+      margin-top: 5rem;
+      color: var(--secondary-color);
+      width: 300px;
+      min-height: 
+      4rem;
+      border: var(--secondary-color) 1px solid;
+      background-color: rgba(0, 0, 0, 0);
+  }
+  
+  button[type=submit]:hover {
+      transition: 0.2s;
+      color: var(--accent-color);
+     border: 3px solid var(--accent-color);
+  }
+  
+  
+  

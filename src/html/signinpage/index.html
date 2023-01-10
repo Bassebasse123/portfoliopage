@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/main.scss" />
+  </head>
+  <body>
+    <main class="signin">
+      <form action="https://formspree.io/f/mlevyezw" method="POST">
+        <div class="signin-card">
+          <img class="signinpic" src="../../images/IMG_20220528_154249__01__01.jpg" />
+          <h1>Please tell me who you are before I show you who I am :)</h1>
+          <div class="form-element">
+            <input
+              id="fullname"
+              type="text"
+              name="fullname"
+              autocomplete="off"
+              required
+            />
+            <label for="fullname" class="label-name">
+              <span class="content-name"> Full Name </span>
+            </label>
+          </div>
+          <div class="form-element">
+            <input
+              id="company"
+              type="text"
+              name="company"
+              autocomplete="off"
+              required
+            />
+            <label for="company" class="label-name">
+              <span class="content-name"> Company </span>
+            </label>
+          </div>
+          <div class="form-element">
+            <input
+              id="reason"
+              type="text"
+              name="reason"
+              autocomplete="off"
+              required
+            />
+            <label for="reason" class="label-name">
+              <span class="content-name"> Reason for visit </span>
+            </label>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
