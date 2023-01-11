@@ -1,0 +1,113 @@
+@import "../variables";
+@import "../base";
+
+body {
+  background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-01gfnn3pwjmy4rqxkz585bc4qh.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+
+  header {
+
+    label {
+      padding: 7px 10px;
+      cursor: pointer;
+      margin: 25px;
+      z-index: 4;
+      position: fixed;
+
+      .bar {
+        display: block;
+        background-color: $accent-color;
+        width: 30px;
+        height: 3px;
+        border-radius: 5px;
+        margin: 5px auto;
+        transition: background-color 0.5s ease-in, transform 0.5s ease-in,
+          width 0.5s ease-in;
+      }
+    }
+
+    input[type="checkbox"] {
+      display: none;
+
+      &:checked {
+        ~ aside {
+          left: 0%;
+        }
+
+        ~ label {
+          .top {
+            transform: translateY(1rem) rotate(405deg);
+            background-color: $secondary-color;
+          }
+          .bottom {
+            transform: translateY(-1rem) rotate(315deg);
+            background-color: $accent-color;
+          }
+          .middle {
+            transform: translatex(105vw);
+            background-color: $accent-color;
+          }
+        }
+      }
+    }
+
+    aside {
+      background-color: $primary-color;
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: -50%;
+      width: 50%;
+      z-index: 3;
+      transition: 0.4s ease-in-out;
+
+      .navbar {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 100px;
+        text-align: center;
+        border-top: 2px solid $secondary-color;
+
+        .navitem {
+          border-bottom: 2px solid $secondary-color;
+          padding: 15px 0;
+          display: block;
+          color: $secondary-color;
+          text-decoration: none;
+          font-size: 20px;
+          position: relative;
+          transition: color 0.3s 0.15s ease-in;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            background-color: $secondary-color;
+            width: 0%;
+            transition: width 0.3s ease-in;
+            z-index: -1;
+          }
+
+          &:hover {
+            color: $primary-color;
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
