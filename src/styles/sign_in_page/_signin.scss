@@ -19,8 +19,13 @@
   }
   
   .signin-card {
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 8px 10px #c5fceb24, 0 0 10px 1px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 2rem;
     height: 75vh;
     width: 75vw;
+    max-width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,8 +48,8 @@
   }
   
   h1 {
-  min-width: 400px;
-  max-width: 600px;
+  min-width: 180px;
+  max-width: 500px;
       text-align: center;
     margin-bottom: 5rem;
     font-size: 2.8rem;
@@ -118,7 +123,7 @@
     transform: translateX(0%);
   }
   
-  a {
+  a.siginbutton {
     box-sizing: border-box;
     margin-top: 5rem;
     text-align: center;
@@ -126,15 +131,14 @@
     font-size: 2rem;
     text-decoration: none;
     color: $secondary-color;
-    width: 300px;
+    width: 75%;
     min-height: 4rem;
     border: $secondary-color 1px solid;
     background-color: rgba(0, 0, 0, 0);
-  }
-
-  a:hover {
-    transition: 0.2s;
+   &:hover {
+    margin-top: calc(5rem - 4px);
+    transition: 0.5s;
     color: $accent-color;
    border: 3px solid $accent-color;
 }
-  
+}

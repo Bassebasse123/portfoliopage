@@ -1,0 +1,59 @@
+.grid-container{
+    margin-top: 5rem;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 2rem;
+
+    div {
+        background-color:#16213e9a;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        bottom: 0;
+        top:0;
+        left: 0;
+        transition: 0.5s;
+
+        h3 {
+            padding: 5rem;
+            width: 50%;
+            font-size: 2rem;
+            color: $secondary-color;
+
+            &:nth-of-type(2) {
+                text-align: right;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        div {
+            opacity: 0;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+    }
+}
+
+.grid-item {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img {
+    position: relative;
+    width: 100%;
+}

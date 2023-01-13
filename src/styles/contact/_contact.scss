@@ -1,0 +1,97 @@
+.contactheading2 {
+    margin: 0;
+}
+
+form {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px $accent-color;
+    padding: 2rem 4rem 4rem;
+    margin: 20px auto 100px auto;
+    width: 100%;
+    max-width: 600px;
+    background-color: #16213ebf;
+
+    label {
+        margin-top: 1rem;
+        height: 25px;
+        line-height: 25px;
+        font-size: 15px;
+        display: block;
+        color: $secondary-color;
+
+        &[for="preftel"], &[for="prefmail"] {
+            margin: 0;
+            width: 45%;
+            display: inline-block;
+        }
+
+        &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+            width: 49%;
+            display: inline-block;
+        }
+    }
+
+    input {
+        border: none;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 30px;
+        display: block;
+        width: 100%;
+        box-shadow: inset 0px 0px 2px 1px $primary-color, 0px 0px 2px 0px white;
+
+        &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+            width: 49%;
+            display: inline-block;
+        }
+
+        &[type="radio"] {
+            margin-right: 1rem;
+            display: inline;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        &:focus {
+            outline: 1px solid $accent-color;
+        }
+    }
+
+    textarea{
+        padding: 1rem;
+        border-radius: 5px;
+        width: 100%;
+        box-shadow: inset 0px 0px 2px 1px $primary-color, 0px 0px 2px 0px white;
+        
+        &:focus {
+            outline: 2px solid $accent-color;
+        }
+    }
+
+    select {
+        outline: 0px;
+        box-shadow: inset 0px 0px 2px 1px $primary-color, 0px 0px 2px 0px white;
+        border: 0px;
+        color: $secondary-color;
+        padding: 0 0.5rem;
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        background-color: $primary-color;
+   
+        
+        option {
+            border: none;
+            outline: none;
+        }
+    }
+
+    button {
+        display: block;
+        text-align: center;
+        background-color: $secondary-color;
+        margin: 0 auto;
+
+    }
+}
+
