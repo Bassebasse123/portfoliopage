@@ -49,7 +49,6 @@ div.cvgrid {
     border-top: 1px solid $accent-color;
 
     h5 {
-      
       line-height: 14px;
       font-size: 12px;
       color: $secondary-color;
@@ -84,18 +83,18 @@ div.cvgrid {
   display: flex;
   grid-area: e;
 }
-  table {
-    width: 100%;
+table {
+  width: 100%;
 
-    tr {
-      td:nth-of-type(2) {
-        h5:nth-of-type(1) {
-          margin-top: 0.5rem;
-          font-weight: 900;
-        }
+  tr {
+    td:nth-of-type(2) {
+      h5:nth-of-type(1) {
+        margin-top: 0.5rem;
+        font-weight: 900;
       }
     }
   }
+}
 
 table tr td:nth-of-type(1) {
   width: 40%;
@@ -119,7 +118,7 @@ table tr td:nth-of-type(1) {
 .languagebar {
   width: 90%;
   margin: 5px;
-box-shadow: 0px 0px 5px 0px $accent-color;
+  box-shadow: 0px 0px 5px 0px $accent-color;
   padding: 0 10px;
   border-radius: 10px;
   background-color: $secondary-color;
@@ -161,9 +160,10 @@ tr:nth-of-type(4) td .languagebar div:nth-of-type(1) {
 }
 
 #boldh {
+  font-size: 1.8rem;
+  margin-top: 1rem;
   font-weight: 800;
 }
-
 
 table {
   tr:nth-of-type(1) {
@@ -172,26 +172,31 @@ table {
         position: relative;
         width: 90%;
         margin: 5px;
-      box-shadow: 0px 0px 5px 0px $accent-color;
+        box-shadow: 0px 0px 5px 0px $accent-color;
         padding: 0 10px;
         border-radius: 10px;
-background-color: $secondary-color;
+        background-color: $secondary-color;
         height: 20px;
         display: flex;
         justify-content: space-around;
         align-items: center;
-      
+
         .progress {
           position: absolute;
           left: 3px;
-          right: 2.5px;
+          right: 2px;
           border-radius: 10px;
-          height: 17px;
-          background: rgb(22,33,62);
-          background: linear-gradient(90deg, rgba(22,33,62,1) 0%, rgba(22,33,62,1) 65%, rgba(254,194,74,1) 75%, rgba(22,33,62,1) 99%, rgba(22,33,62,1) 100%);
+          height: 84%;
+          background: $primary-color;
+          background: linear-gradient(
+            90deg,
+            $primary-color 0%,
+            $primary-color 65%,
+            $accent-color 75%,
+            $primary-color 100%
+          );
           box-shadow: 0px 0px 0px 0px $secondary-color;
         }
-
       }
     }
   }
@@ -202,7 +207,7 @@ background-color: $secondary-color;
         position: relative;
         width: 90%;
         margin: 5px;
-      box-shadow: 0px 0px 5px 0px $accent-color;
+        box-shadow: 0px 0px 5px 0px $accent-color;
         padding: 0 10px;
         border-radius: 10px;
         background-color: $secondary-color;
@@ -210,24 +215,22 @@ background-color: $secondary-color;
         display: flex;
         justify-content: space-around;
         align-items: center;
-      
+
         .progress {
           position: absolute;
-          left: 4px;
-          border-bottom-left-radius: 10px;
-          border-top-left-radius: 10px;
-          height: 70%;
-          width: 70%;
-          background-color: $primary-color;
-        }
-      
-        .progressend {
-          position: absolute;
-          left: 71%;
-          z-index: 2;
-          height: 100%;
-          width: 3px;
-          background-color: $accent-color;
+          left: 3px;
+          right: 2px;
+          border-radius: 10px;
+          height: 84%;
+          background: $primary-color;
+          background: linear-gradient(
+            90deg,
+            $primary-color 0%,
+            $primary-color 60%,
+            $accent-color 70%,
+            $primary-color 95%
+          );
+          box-shadow: 0px 0px 0px 0px $secondary-color;
         }
       }
     }
@@ -239,7 +242,7 @@ background-color: $secondary-color;
         position: relative;
         width: 90%;
         margin: 5px;
-      box-shadow: 0px 0px 5px 0px $accent-color;
+        box-shadow: 0px 0px 5px 0px $accent-color;
         padding: 0 10px;
         border-radius: 10px;
         background-color: $secondary-color;
@@ -247,24 +250,22 @@ background-color: $secondary-color;
         display: flex;
         justify-content: space-around;
         align-items: center;
-      
+
         .progress {
           position: absolute;
-          left: 4px;
-          border-bottom-left-radius: 10px;
-          border-top-left-radius: 10px;
-          height: 70%;
-          width: 80%;
-          background-color: $primary-color;
-        }
-      
-        .progressend {
-          position: absolute;
-          left: 81%;
-          z-index: 2;
-          height: 100%;
-          width: 3px;
-          background-color: $accent-color;
+          left: 3px;
+          right: 2px;
+          border-radius: 10px;
+          height: 84%;
+          background: $primary-color;
+          background: linear-gradient(
+            90deg,
+            $primary-color 0%,
+            $primary-color 0%,
+            $accent-color 25%,
+            $primary-color 70%
+          );
+          box-shadow: 0px 0px 0px 0px $secondary-color;
         }
       }
     }
@@ -276,7 +277,7 @@ background-color: $secondary-color;
         position: relative;
         width: 90%;
         margin: 5px;
-      box-shadow: 0px 0px 5px 0px $accent-color;
+        box-shadow: 0px 0px 5px 0px $accent-color;
         padding: 0 10px;
         border-radius: 10px;
         background-color: $secondary-color;
@@ -284,24 +285,22 @@ background-color: $secondary-color;
         display: flex;
         justify-content: space-around;
         align-items: center;
-      
+
         .progress {
           position: absolute;
-          left: 4px;
-          border-bottom-left-radius: 10px;
-          border-top-left-radius: 10px;
-          height: 70%;
-          width: 80%;
-          background-color: $primary-color;
-        }
-      
-        .progressend {
-          position: absolute;
-          left: 81%;
-          z-index: 2;
-          height: 100%;
-          width: 3px;
-          background-color: $accent-color;
+          left: 3px;
+          right: 2px;
+          border-radius: 10px;
+          height: 84%;
+          background: $primary-color;
+          background: linear-gradient(
+            90deg,
+            $primary-color 0%,
+            $primary-color 55%,
+            $accent-color 65%,
+            $primary-color 75%
+          );
+          box-shadow: 0px 0px 0px 0px $secondary-color;
         }
       }
     }
@@ -313,7 +312,7 @@ background-color: $secondary-color;
         position: relative;
         width: 90%;
         margin: 5px;
-      box-shadow: 0px 0px 5px 0px $accent-color;
+        box-shadow: 0px 0px 5px 0px $accent-color;
         padding: 0 10px;
         border-radius: 10px;
         background-color: $secondary-color;
@@ -321,28 +320,129 @@ background-color: $secondary-color;
         display: flex;
         justify-content: space-around;
         align-items: center;
-      
+
         .progress {
           position: absolute;
-          left: 4px;
-          border-bottom-left-radius: 10px;
-          border-top-left-radius: 10px;
-          height: 70%;
-          width: 80%;
-          background-color: $primary-color;
+          left: 3px;
+          right: 2px;
+          border-radius: 10px;
+          height: 84%;
+          background: $primary-color;
+          background: linear-gradient(
+            90deg,
+            $primary-color 0%,
+            $primary-color 40%,
+            $accent-color 55%,
+            $primary-color 60%
+          );
+          box-shadow: 0px 0px 0px 0px $secondary-color;
         }
-      
-        .progressend {
+      }
+    }
+  }
+
+  tr:nth-of-type(6) {
+    td:nth-of-type(2) {
+      .ITbar {
+        position: relative;
+        width: 90%;
+        margin: 5px;
+        box-shadow: 0px 0px 5px 0px $accent-color;
+        padding: 0 10px;
+        border-radius: 10px;
+        background-color: $secondary-color;
+        height: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .progress {
           position: absolute;
-          left: 81%;
-          z-index: 2;
-          height: 100%;
-          width: 3px;
-          background-color: $accent-color;
+          left: 3px;
+          right: 2px;
+          border-radius: 10px;
+          height: 84%;
+          background: $primary-color;
+          background: linear-gradient(
+            90deg,
+            $primary-color 0%,
+            $primary-color 45%,
+            $accent-color 55%,
+            $primary-color 65%
+          );
+          box-shadow: 0px 0px 0px 0px $secondary-color;
+        }
+      }
+    }
+  }
+
+  tr:nth-of-type(7) {
+    td:nth-of-type(2) {
+      .ITbar {
+        position: relative;
+        width: 90%;
+        margin: 5px;
+        box-shadow: 0px 0px 5px 0px $accent-color;
+        padding: 0 10px;
+        border-radius: 10px;
+        background-color: $secondary-color;
+        height: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .progress {
+          position: absolute;
+          left: 3px;
+          right: 2px;
+          border-radius: 10px;
+          height: 84%;
+          background: $primary-color;
+          background: linear-gradient(
+            90deg,
+            $primary-color 0%,
+            $primary-color 40%,
+            $accent-color 50%,
+            $primary-color 60%
+          );
+          box-shadow: 0px 0px 0px 0px $secondary-color;
+        }
+      }
+    }
+  }
+
+  tr:nth-of-type(8) {
+    td:nth-of-type(2) {
+      .ITbar {
+        position: relative;
+        width: 90%;
+        margin: 5px;
+        box-shadow: 0px 0px 5px 0px $accent-color;
+        padding: 0 10px;
+        border-radius: 10px;
+        background-color: $secondary-color;
+        height: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .progress {
+          position: absolute;
+          left: 3px;
+          right: 2px;
+          border-radius: 10px;
+          height: 84%;
+          background: $primary-color;
+          background: linear-gradient(
+            90deg,
+            $primary-color 0%,
+            $primary-color 35%,
+            $accent-color 45%,
+            $primary-color 55%
+          );
+          box-shadow: 0px 0px 0px 0px $secondary-color;
         }
       }
     }
   }
 }
-
-
