@@ -8,6 +8,12 @@ body{
   position: absolute;
 }
 
+main {
+  margin: 30px auto;
+  width: 85vw;
+  padding-bottom: 100px;
+}
+
 :root {
   font-family: monospace;
 }
@@ -16,7 +22,7 @@ body{
   margin: 0 0 30px auto;
   width: fit-content;
   text-align: right;
-  font-size: 30px;
+  font-size: 28px;
   color: $secondary-color;
   overflow: hidden;
   border-right: .15em solid orange;
