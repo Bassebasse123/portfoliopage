@@ -1,10 +1,17 @@
 
 .flex-container {
-  margin: -20px auto;
+  margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .flex-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
 .flex-item {
@@ -14,6 +21,7 @@
     align-items: center;
     scale: 0.8;
     margin-bottom: -30px;
+    width: 400px;
 }
 
 h2 {
@@ -23,6 +31,10 @@ h2 {
   text-align: center;
   color: $secondary-color;
 }
+
+@media (min-width: 1024px) {
+  h2 {font-size: 30px;
+}}
 
 p {
   margin-bottom: 30px;
@@ -310,6 +322,12 @@ p {
     animation: growmiddle 2s infinite alternate;
 }
 
+@media (min-width:1024px) {
+  .two {
+    top: 247.5px;
+  }
+}
+
 .three {
     position: absolute;
     top: 215px;
@@ -317,6 +335,12 @@ p {
     width: 30px;
     box-shadow: 5px 5px 10px 0px rgb(168, 168, 168);
     animation: growsmall 2s infinite alternate;
+}
+
+@media (min-width:1024px) {
+  .three {
+    top: 264.5px;
+  }
 }
 
 

@@ -52,6 +52,14 @@ body {
       }
     }
 
+    @media (min-width:768px) {
+      label {
+        transform: scale(2);
+        margin: 50px;
+      }
+      
+    }
+
     input[type="checkbox"] {
       display: none;
 
@@ -97,35 +105,42 @@ body {
             }
           }
 
-          @media (min-width:1000px) {
-            .middle {
-              transform: translate(calc(100vw - 105px)) scaleX(0.75);
-              background-color: $accent-color;
+          @media (min-width: 768px) {
+            .arrowbottom, .arrowtop {
+              display: none;
             }
-            .arrowtop {
-              opacity: 1;
-              transform: translate(calc(100vw - 102px), -12px) rotate(-25deg);
-            }
-            .arrowbottom {
-              opacity: 1;
-              transform: translate(calc(100vw - 102px), -4px) rotate(25deg);
-            }
+            
           }
 
-          @media (min-width:1500px) {
-            .middle {
-              transform: translate(calc(100vw - 125px)) scaleX(0.75);
-              background-color: $accent-color;
-            }
-            .arrowtop {
-              opacity: 1;
-              transform: translate(calc(100vw - 122px), -12px) rotate(-25deg);
-            }
-            .arrowbottom {
-              opacity: 1;
-              transform: translate(calc(100vw - 122px), -4px) rotate(25deg);
-            }
-          }
+          // @media (min-width:1000px) {
+          //   .middle {
+          //     transform: translate(calc(100vw - 105px)) scaleX(0.75);
+          //     background-color: $accent-color;
+          //   }
+          //   .arrowtop {
+          //     opacity: 1;
+          //     transform: translate(calc(100vw - 102px), -12px) rotate(-25deg);
+          //   }
+          //   .arrowbottom {
+          //     opacity: 1;
+          //     transform: translate(calc(100vw - 102px), -4px) rotate(25deg);
+          //   }
+          // }
+
+          // @media (min-width:1500px) {
+          //   .middle {
+          //     transform: translate(calc(100vw - 125px)) scaleX(0.75);
+          //     background-color: $accent-color;
+          //   }
+          //   .arrowtop {
+          //     opacity: 1;
+          //     transform: translate(calc(100vw - 122px), -12px) rotate(-25deg);
+          //   }
+          //   .arrowbottom {
+          //     opacity: 1;
+          //     transform: translate(calc(100vw - 122px), -4px) rotate(25deg);
+          //   }
+          // }
         }
       }
     }
@@ -177,6 +192,23 @@ body {
             }
           }
         }
+      }
+
+      @media (min-width:768px) {
+        .navbar {
+          margin-top: 150px;
+
+          .navitem {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+
+    @media (min-width:1024px) {
+      aside {
+        left: -25%;
+        width: 25%;
       }
     }
   }
