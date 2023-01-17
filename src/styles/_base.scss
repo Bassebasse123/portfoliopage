@@ -95,7 +95,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;  
   padding: 10px;
   text-align: center;
   position: fixed;
@@ -107,7 +107,7 @@ footer {
   color: $secondary-color;
 
   div {
-    margin-top: 5px;
+    margin-left: 2rem;
   }
 
   a {
