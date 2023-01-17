@@ -8,7 +8,106 @@
       href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+<style>
+  :root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Comic Neue', cursive;
+  /* CSS gradient generator: https://cssgradient.io/ */
+  background: radial-gradient(
+    circle,
+    rgba(43, 44, 46, 1) 13%,
+    rgba(25, 25, 25, 1) 65%
+  );
+}
+
+/* CARDS */
+.card-container {
+  display: flex;
+  width: 100rem;
+}
+
+.card {
+  position: relative;
+  /* border: 1px solid red; */
+  margin: 1rem;
+  width: 50%;
+  height: 80vh;
+  color: white;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2.5rem;
+  box-shadow: 5px 5px 10px black;
+  overflow: hidden;
+}
+
+.card-one {
+  background-image: url(./portrait-lady.jpg);
+}
+
+.card-two {
+  background-image: url(./portrait-sir.jpg);
+}
+
+/* BUTTON */
+
+button {
+position: absolute;
+top: 30px;
+right: 30px;
+background: transparent;
+border: none;
+color: white;
+font-size: 3.5rem;
+text-shadow: 2px 2px 5px black;
+cursor: crosshair;
+z-index: 1;
+}
+
+/* TEXT */
+h1 {
+  font-size: 4rem;
+  color: rgb(182, 179, 97);
+}
+h2 {
+  font-size: 2.5rem;
+  color: rgb(227, 225, 225);
+}
+p{
+  font-size: 1.4rem;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 8rem 3rem;
+  background-color: rgb(0, 0, 0, 0.7);
+  clip-path: circle(0% at 50% 80%);
+  transition: 0.8s;
+} 
+
+button:hover ~ .text {
+  clip-path: circle(120% at 50% 80%);
+}
+</style>
     <script src="https://kit.fontawesome.com/440290d64b.js" crossorigin="anonymous"></script>
   </head>
 

@@ -3,14 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<link rel="stylesheet" href="./style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<style>
+  * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 10rem auto;
+  background-color: rgb(217, 236, 252);
+}
+
+.grid-container {
+  width: 80%;
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "dc dc jw kw"
+    "jh pa pa kw";
+}
+
+@media (max-width: 920px) {
+  .grid-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      "dc dc jw"
+      "jh pa pa"
+      "kw kw kw";
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      "dc"
+      "jw"
+      "jh"
+      "pa"
+      "kw";
+  }
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid lightblue;
+}
+
+.flex-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item:nth-of-type(1) {
+    background-image: url(./bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 3rem;
+  grid-area: dc;
+  background-color: blueviolet;
+  color: white;
+}
+
+.grid-item:nth-of-type(2) {
+  grid-area: jw;
+  background-color: rgb(91, 94, 130);
+  color: white;
+}
+
+.grid-item:nth-of-type(3) {
+  grid-area: jh;
+  background-color: whitesmoke;
+}
+
+.grid-item:nth-of-type(4) {
+  grid-area: pa;
+  background-color: rgb(34, 34, 55);
+  color: white;
+}
+
+.grid-item:nth-of-type(5) {
+  grid-area: kw;
+  background-color: whitesmoke;
+}
+
+</style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
   <title>Grid Challange</title>
 </head>
 <body class="grid-container">
   <div class="grid-item flex-container">
     <div class="flex-item">
-    <img src="./images/image-daniel.jpg" alt="">
+    <img src="./image-daniel.jpg" alt="">
       <div class="name">
       <div class="flex-name">
         <p>Daniel Clifford</p>
@@ -33,7 +138,7 @@
 
   <div class="grid-item flex-container">
     <div class="flex-item">
-    <img src="./images/image-jonathan.jpg" alt="">
+    <img src="./image-jonathan.jpg" alt="">
       <div class="name">
       <div class="flex-name">
         <p>Jonathan Walters</p>
@@ -50,7 +155,7 @@
 
   <div class="grid-item flex-container">
     <div class="flex-item">
-    <img src="./images/image-jeanette.jpg" alt="">
+    <img src="./image-jeanette.jpg" alt="">
       <div class="name">
       <div class="flex-name">
         <p>Jeanette Harmon</p>
@@ -67,7 +172,7 @@
 
   <div class="grid-item flex-container">
     <div class="flex-item">
-    <img src="./images/image-patrick.jpg" alt="">
+    <img src="./image-patrick.jpg" alt="">
       <div class="name">
       <div class="flex-name">
         <p>Patrick Abrams</p>
@@ -89,7 +194,7 @@
 
   <div class="grid-item flex-container">
     <div class="flex-item">
-    <img src="./images/image-kira.jpg" alt="">
+    <img src="./image-kira.jpg" alt="">
       <div class="name">
       <div class="flex-name">
         <p>Kira Whittle</p>
