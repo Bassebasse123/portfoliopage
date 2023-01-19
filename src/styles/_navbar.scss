@@ -26,7 +26,7 @@ body {
         border-radius: 5px;
         margin: 5px auto;
         transition: background-color 0.5s ease-in, transform 0.5s ease-in,
-          width 0.5s ease-in;
+        width 0.5s ease-in;
       }
 
       .arrowtop,
@@ -37,18 +37,14 @@ body {
         top: 23px;
         width: 15px;
         transition: 1s;
-
-        &:focus {
-          background-color: none;
-        }
       }
 
       .arrowtop {
-        transform: translate(calc(100vw), -4px) rotate(25deg);
+        transform: translate(100vw, -4px) rotate(25deg);
       }
 
       .arrowbottom {
-        transform: translate(calc(100vw), -12px) rotate(-25deg);
+        transform: translate(100vw, -12px) rotate(-25deg);
       }
     }
 
@@ -111,36 +107,6 @@ body {
             }
             
           }
-
-          // @media (min-width:1000px) {
-          //   .middle {
-          //     transform: translate(calc(100vw - 105px)) scaleX(0.75);
-          //     background-color: $accent-color;
-          //   }
-          //   .arrowtop {
-          //     opacity: 1;
-          //     transform: translate(calc(100vw - 102px), -12px) rotate(-25deg);
-          //   }
-          //   .arrowbottom {
-          //     opacity: 1;
-          //     transform: translate(calc(100vw - 102px), -4px) rotate(25deg);
-          //   }
-          // }
-
-          // @media (min-width:1500px) {
-          //   .middle {
-          //     transform: translate(calc(100vw - 125px)) scaleX(0.75);
-          //     background-color: $accent-color;
-          //   }
-          //   .arrowtop {
-          //     opacity: 1;
-          //     transform: translate(calc(100vw - 122px), -12px) rotate(-25deg);
-          //   }
-          //   .arrowbottom {
-          //     opacity: 1;
-          //     transform: translate(calc(100vw - 122px), -4px) rotate(25deg);
-          //   }
-          // }
         }
       }
     }

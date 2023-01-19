@@ -40,21 +40,21 @@
       <h2 class="contactheading2">Lets create something great together</h2>
       
       <form action="https://formspree.io/f/mbjejvbr" method="POST">
-        <label for="firstname">First Name:</label>
-        <label for="lastname">Last Name:</label>
-        <input type="text" name="firstname" id="firstname">
-        <input type="text" name="lastname" id="lastname">
+        <label for="firstname">First Name:*</label>
+        <label for="lastname">Last Name:*</label>
+        <input type="text" required name="firstname" id="firstname">
+        <input type="text" required name="lastname" id="lastname">
 
         <label for="company">Company Name:</label>
         <label for="title">Job title:</label>
         <input type="text" name="company" id="company">
         <input type="text" name="title" id="title">
 
-        <label for="email">E-Mail:</label>
-        <input type="email" name="email" id="email">
+        <label for="email">E-Mail:*</label>
+        <input required type="email" name="email" id="email">
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone">
+        <label for="phone">Phone Number*</label>
+        <input required type="tel" name="phone" id="phone">
 
         <label for="prefcontact">How to contact you?</label>
         <label for="preftel"><input type="radio" name="prefcontact" id="telephone">Telephone</label>
@@ -63,7 +63,6 @@
         <label for="message">How did you find me?</label>
         <select name="attention" id="attention">
           <option value="0">Chose one</option>
-          <option value="0">Github</option>
           <option value="0">Github</option>
           <option value="1">LinkedIn</option>
           <option value="2">DCI</option>
@@ -74,7 +73,8 @@
         </select>
 
         <label for="message">Why are you contacting me?</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea required name="" id="" cols="30" rows="10"></textarea>
+        <label for="">*required</label>
         <button type="submit">Submit</button>
       
       </form>
