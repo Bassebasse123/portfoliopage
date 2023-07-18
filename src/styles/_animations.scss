@@ -1,40 +1,41 @@
-
 .flex-container {
   margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  @media (min-width: 1024px) {
-    .flex-container {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+@media (min-width: 1024px) {
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+}
 
 .flex-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    scale: 0.8;
-    margin-bottom: -30px;
-    width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scale: 0.8;
+  margin-bottom: -30px;
+  width: 400px;
 }
 
 h2 {
   margin: 0 auto;
   margin-bottom: 10px;
-  font-size: 18px ;
+  font-size: 18px;
   text-align: center;
   color: $secondary-color;
 }
 
 @media (min-width: 1024px) {
-  h2 {font-size: 30px;
-}}
+  h2 {
+    font-size: 30px;
+  }
+}
 
 p {
   margin-bottom: 30px;
@@ -45,333 +46,333 @@ p {
 
 // SUN ANIMATION
 .center {
-    transform: scale(1);
-    border-radius: 7px;
-    width: 400px;
-    height: 400px;
-    background-color: rgb(43, 44, 47);
+  transform: scale(1);
+  border-radius: 7px;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(43, 44, 47);
+}
+
+.hole {
+  position: relative;
+  opacity: 1;
+  clip-path: circle(25% at 50% 50%);
+  height: 100%;
+  animation: holefade 4s infinite;
+}
+
+@keyframes holefade {
+  0% {
+    opacity: 0;
   }
-  
-  .hole {
-    position: relative;
+  2% {
+    opacity: 0;
+    transition: ease-in;
+  }
+  20% {
     opacity: 1;
-    clip-path: circle(25% at 50% 50%);
-    height: 100%;
-    animation: holefade 4s infinite;
   }
-  
-  @keyframes holefade {
-    0% {
-      opacity: 0;
-    }
-    2% {
-      opacity: 0;
-      transition: ease-in;
-    }
-    20% {
-      opacity: 1;
-    }
-    70% {
-      opacity: 1;
-      transition: ease-out;
-    }
-    98% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  .sky {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 40%;
-    z-index: 0;
-    background-color: skyblue;
-    height: 60%;
-  }
-  
-  .sun {
-    position: absolute;
-    z-index: 2;
-    top: 110px;
-    left: 183px;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background-color: rgb(255, 242, 0);
-    transform-origin: 17px 130px;
-    transform: rotateZ(-90deg);
-    animation: sunrise 4s infinite;
-  }
-  
-  @keyframes sunrise {
-    0% {
-      transform: rotate(-90deg);
-      transition: ease;
-    }
-    35% {
-      transform: rotate(-25deg);
-      transition: ease-in;
-    }
-  
-    100% {
-      transform: rotateZ(90deg);
-    }
-  }
-  
-  .sand {
-    position: absolute;
-    top: 60%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    background-color: rgb(247, 219, 134);
-  }
-  
-  .pyrleft {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 400px;
-    z-index: 2;
-    clip-path: polygon(50% 45%, 35% 60%, 55% 60%);
-    background-color: white;
-    animation: shadowleft 4s infinite;
-  }
-  
-  @keyframes shadowleft {
-    0% {
-      background-color: white;
-    }
-    35% {
-      background-color: white;
-    }
-  
-    70% {
-      background-color: rgb(204, 204, 204);
-    }
-    100% {
-      background-color: rgb(204, 204, 204);
-    }
-  }
-  
-  .pyrright {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 400px;
-    z-index: 2;
-    clip-path: polygon(50% 45%, 55% 60%, 65% 60%);
-    background-color: rgb(204, 204, 204);
-    animation: shadowright 4s infinite;
-  }
-  
-  @keyframes shadowright {
-    0% {
-      background-color: rgb(170, 170, 170);
-    }
-    40% {
-      background-color: rgb(204, 204, 204);
-    }
-    100% {
-      background-color: white;
-    }
-  }
-  
-  .shadow {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 400px;
-    z-index: 3;
-    clip-path: polygon(90% 60%, 35% 60%, 65% 60%);
-    background-color: rgb(200, 178, 110);
-    animation: shadowmove 4s infinite;
-  }
-  
-  @keyframes shadowmove {
-      0% {
-          
-          clip-path: polygon(90% 60%, 35% 60%, 65% 60%);
-          transition: ease-out;
-      }
-  35% {
-      clip-path: polygon(73% 71%, 35% 60%, 65% 60%);
-  transition: ease-in;
-  }
-      
-      50% {
-          clip-path: polygon(50% 69%, 35% 60%, 65% 60%);
-      transition: ease-in;
-  }
-  
   70% {
-      clip-path: polygon(28% 72%, 35% 60%, 65% 60%);
-  transition: ease-in;
+    opacity: 1;
+    transition: ease-out;
   }
-      
-      95% {
-          clip-path: polygon(19% 60%, 35% 60%, 65% 60%);
-      }
+  98% {
+    opacity: 0;
   }
-  
+  100% {
+    opacity: 0;
+  }
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+  z-index: 0;
+  background-color: skyblue;
+  height: 60%;
+}
+
+.sun {
+  position: absolute;
+  z-index: 2;
+  top: 110px;
+  left: 183px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgb(255, 242, 0);
+  transform-origin: 17px 130px;
+  transform: rotateZ(-90deg);
+  animation: sunrise 4s infinite;
+}
+
+@keyframes sunrise {
+  0% {
+    transform: rotate(-90deg);
+    transition: ease;
+  }
+  35% {
+    transform: rotate(-25deg);
+    transition: ease-in;
+  }
+
+  100% {
+    transform: rotateZ(90deg);
+  }
+}
+
+.sand {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: rgb(247, 219, 134);
+}
+
+.pyrleft {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 2;
+  clip-path: polygon(50% 45%, 35% 60%, 55% 60%);
+  background-color: white;
+  animation: shadowleft 4s infinite;
+}
+
+@keyframes shadowleft {
+  0% {
+    background-color: white;
+  }
+  35% {
+    background-color: white;
+  }
+
+  70% {
+    background-color: rgb(204, 204, 204);
+  }
+  100% {
+    background-color: rgb(204, 204, 204);
+  }
+}
+
+.pyrright {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 2;
+  clip-path: polygon(50% 45%, 55% 60%, 65% 60%);
+  background-color: rgb(204, 204, 204);
+  animation: shadowright 4s infinite;
+}
+
+@keyframes shadowright {
+  0% {
+    background-color: rgb(170, 170, 170);
+  }
+  40% {
+    background-color: rgb(204, 204, 204);
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 3;
+  clip-path: polygon(90% 60%, 35% 60%, 65% 60%);
+  background-color: rgb(200, 178, 110);
+  animation: shadowmove 4s infinite;
+}
+
+@keyframes shadowmove {
+  0% {
+    clip-path: polygon(90% 60%, 35% 60%, 65% 60%);
+    transition: ease-out;
+  }
+  35% {
+    clip-path: polygon(73% 71%, 35% 60%, 65% 60%);
+    transition: ease-in;
+  }
+
+  50% {
+    clip-path: polygon(50% 69%, 35% 60%, 65% 60%);
+    transition: ease-in;
+  }
+
+  70% {
+    clip-path: polygon(28% 72%, 35% 60%, 65% 60%);
+    transition: ease-in;
+  }
+
+  95% {
+    clip-path: polygon(19% 60%, 35% 60%, 65% 60%);
+  }
+}
+
 //   SUN ANIMATION END
 
 // BARS ANIMATION
 .frame {
-    scale: 1;
-    position: relative;
-    width: 400px;
-    height: 400px;
-    border-radius: 2px;
-      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-      overflow: hidden;
-    background: radial-gradient(rgb(0, 237, 134) ,rgb(0, 183, 98));
-    color: #333;
-      font-family: 'Open Sans', Helvetica, sans-serif;
-  }
-  
-  .centerbars {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-  
-  button {
-      background: none;
-      border: none;
-  }
-  
-  .bar {
-      width: 100px;
-      height: 10px;
-      background-color: white;
-      margin: 1rem 0;
-      border-radius: 5px;
-      box-shadow: 0px 0px 5px rgb(68, 68, 68);
-      transition: 0.5s;
-  }
-  
-  .bartwo{
-      z-index: -1;
-  }
-  
-  button:hover .barone {
-      transform: translateY(2rem) rotate(405deg);
+  scale: 1;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: radial-gradient(rgb(0, 237, 134), rgb(0, 183, 98));
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.centerbars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.bar {
+  width: 100px;
+  height: 10px;
+  background-color: white;
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(68, 68, 68);
+  transition: 0.5s;
+}
+
+.bartwo {
+  z-index: -1;
+}
+
+button:hover .barone {
+  transform: translateY(2rem) rotate(405deg);
   background-color: rgb(0, 0, 0);
-  }
-  
-  button:hover .bartwo {
-      transform: translatex(200rem);
-  }
-  
-  button:hover .barthree {
-      transform: translateY(-2rem) rotate(315deg);
-      background-color: rgb(255, 0, 0);
-  }
+}
+
+button:hover .bartwo {
+  transform: translatex(200rem);
+}
+
+button:hover .barthree {
+  transform: translateY(-2rem) rotate(315deg);
+  background-color: rgb(255, 0, 0);
+}
 // BARS ANIMATION END
 
 // CIRCLE ANIMATION
-
 
 .framecircles {
   width: 400px;
   height: 400px;
   border-radius: 5px;
-	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-	overflow: hidden;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   background: #e56262;
   color: #333;
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle {
-    border-radius: 50%;
-    background-color: white;
-    transform: scale(1);
-    aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: white;
+  transform: scale(1);
+  aspect-ratio: 1;
 }
 
 .one {
-    position: relative;
-    width: 100px;
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.34);
-    animation: growbig 2s infinite alternate;
+  position: relative;
+  width: 100px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.34);
+  animation: growbig 2s infinite alternate;
 }
 
 .two {
-    position: absolute;
-    top: 198px;
-    left: 167.5px;
-    width: 65px;
-    box-shadow: 5px 5px 10px 0px rgb(168, 168, 168);
-    animation: growmiddle 2s infinite alternate;
+  position: absolute;
+  top: 198px;
+  left: 167.5px;
+  width: 65px;
+  box-shadow: 5px 5px 10px 0px rgb(168, 168, 168);
+  animation: growmiddle 2s infinite alternate;
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .two {
     top: 247.5px;
   }
 }
 
 .three {
-    position: absolute;
-    top: 215px;
-    left: 185px;
-    width: 30px;
-    box-shadow: 5px 5px 10px 0px rgb(168, 168, 168);
-    animation: growsmall 2s infinite alternate;
+  position: absolute;
+  top: 215px;
+  left: 185px;
+  width: 30px;
+  box-shadow: 5px 5px 10px 0px rgb(168, 168, 168);
+  animation: growsmall 2s infinite alternate;
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .three {
     top: 264.5px;
   }
 }
 
-
 @keyframes growbig {
-    0%, 10% {
-        transform: scale(0);
-    }
+  0%,
+  10% {
+    transform: scale(0);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes growmiddle {
-    0%, 40% {
-        transform: scale(0);
-    }
+  0%,
+  40% {
+    transform: scale(0);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes growsmall {
-    0%, 70% {
-        transform: scale(0);
-    }
+  0%,
+  70% {
+    transform: scale(0);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 // CIRCLE ANIMATION END
